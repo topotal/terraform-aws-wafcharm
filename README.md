@@ -2,6 +2,12 @@
 
 Terraform module for [WafCharm](https://www.wafcharm.com/jp/) reporting and notification - transfers AWS WAF logs to WafCharm S3 for monthly reports and email alerts
 
+## Documentation
+
+- [Getting Started](docs/getting-started.md) - Overview, architecture, and basic usage
+- [Configuration Guide](docs/configuration.md) - Web ACL Logging and WafCharm admin console settings
+- [Troubleshooting](docs/troubleshooting.md) - Common issues and important notes
+
 <!-- BEGIN_TF_DOCS -->
 
 ## Requirements
@@ -74,4 +80,3 @@ No modules.
 | <a name="output_waf_log_bucket_id"></a> [waf_log_bucket_id](#output_waf_log_bucket_id)                            | ID of the WAF log S3 bucket                 |
 
 <!-- END_TF_DOCS -->
-
