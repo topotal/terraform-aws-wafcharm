@@ -2,6 +2,8 @@
 
 Terraform module for [WafCharm](https://www.wafcharm.com/jp/) reporting and notification - transfers AWS WAF logs to WafCharm S3 for monthly reports and email alerts
 
+> **Note:** This module supports **AWS WAF v2 only**. AWS WAF Classic is not supported.
+
 ## Documentation
 
 - [Getting Started](docs/getting-started.md) - Overview, architecture, and basic usage

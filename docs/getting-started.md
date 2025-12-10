@@ -2,6 +2,8 @@
 
 This Terraform module enables WafCharm's reporting and notification features by forwarding AWS WAF logs to WafCharm's S3 bucket.
 
+> **Note:** This module supports **AWS WAF v2 only**. AWS WAF Classic is not supported.
+
 ## Overview
 
 This module creates the following resources:
