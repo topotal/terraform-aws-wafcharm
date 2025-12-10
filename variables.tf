@@ -28,14 +28,15 @@ variable "waf_log_bucket_name" {
   }
 }
 
+// https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html
 variable "lambda_runtime" {
   type        = string
   description = "Lambda runtime version"
-  default     = "nodejs18.x"
+  default     = "nodejs24.x"
 
   validation {
-    condition     = can(regex("^nodejs(12|14|16|18)\\.x$", var.lambda_runtime))
-    error_message = "Lambda runtime must be one of: nodejs12.x, nodejs14.x, nodejs16.x, nodejs18.x"
+    condition     = can(regex("^nodejs(22|24)\\.x$", var.lambda_runtime))
+    error_message = "Lambda runtime must be one of: nodejs22.x, nodejs24.x"
   }
 }
 
