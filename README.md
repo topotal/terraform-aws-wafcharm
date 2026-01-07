@@ -2,11 +2,15 @@
 
 Terraform module for [WafCharm](https://www.wafcharm.com/jp/) IAM Role - creates IAM role and policies required for WafCharm integration
 
-> **Note:** This module supports **WafCharm AWS WAF v2 Advanced Rule Policy** only.
+> **Note:** This module supports **WafCharm New Plan with AWS WAF v2 Advanced Rule Policy** only.
 >
 > The following configurations are **not supported**:
-> - AWS WAF Classic
-> - AWS WAF v2 Legacy Rule Policy
+> - AWS WAF Classic (only available with Legacy Plan, cannot migrate to New Plan)
+> - AWS WAF v2 + Legacy Rule Policy (requires multiple Credentials and Lambda integration)
+> - WafCharm Lite (separate product used with CSC Managed Rules)
+>
+> For more details on WafCharm plans and rule policies, see:
+> - [Differences between Advanced Rule Policy and Legacy Rule Policy](https://console.wafcharm.com/ja/help/advanced_rule_policy_vs_legacy_rule_policy_ja)
 
 ## Usage
 
